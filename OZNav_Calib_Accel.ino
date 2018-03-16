@@ -1,10 +1,9 @@
 /*  Etalonnage du zéro de l'accéléromètre.
- *  Les valeurs sont à rentrer dans les registres correspondant
- *  dans C:\Users\Olivier\Documents\Arduino\libraries\Adafruit_FXOS8700\Adafruit_FXOS8700.cpp
- *  fonction Adafruit_FXOS8700::begin
- *  Penser à remettre ces valeurs à zéro avant ou faire la différence.
+ *  Les valeurs sont à rentrer dans OZNav / compas.h -> accel_offset[3]
  *  Utiliser la méthode des 6 faces :
  *  C:\Users\Olivier\Documents\Voile\Navigation\NXP\AN4069_offset_calibration.pdf, section 3.2
+ *  Online : https://www.nxp.com/docs/en/application-note/AN4069.pdf
+ *  2 méthodes possibles. J'utilise la méthode du midpoint.
  */
 
 #include <Wire.h>
